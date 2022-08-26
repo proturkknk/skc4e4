@@ -1,0 +1,134 @@
+body{
+    background-color: #333;
+}
+
+.guild span{
+    font-size: 30px;
+    font-family: Rubik;
+    color: #333;
+    text-align: center;
+    display: block;
+}
+
+.guild img{
+    border-radius: 50%;
+    max-width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    max-heigh: 130px;
+    text-align: center;
+    display: block;
+}
+
+.manage{
+    font-size: 35px;
+    background-color: purple;
+    height: 40px;
+    border-radius: 10px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Sans-serif;
+    margin-top: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.add{
+    font-size: 35px;
+    background-color: green;
+    height: 40px;
+    border-radius: 10px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Sans-serif;
+    margin-top: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.grids{
+    display: grid;
+    gap: 50px;
+    padding: 20px;
+    grid: auto / auto;
+}
+
+@media only screen and (min-width: 650px) {
+    .grids{
+        display: grid;
+        gap: 50px;
+        padding: 20px;
+        grid: auto / auto auto;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .grids{
+        display: grid;
+        gap: 50px;
+        padding: 20px;
+        grid: auto / auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .grids{
+        display: grid;
+        gap: 50px;
+        padding: 20px;
+        grid: auto / auto auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .grids{
+        display: grid;
+        gap: 50px;
+        padding: 20px;
+        grid: auto / auto auto auto auto auto;
+    }
+}
+
+.guild{
+    background-color: #f2f2f2;
+    max-width: 300px;
+    min-width: 300px;
+    height: 250px;
+    max-heigh: 600px;
+    min-heigh: 600px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.topbar{
+    overflow: hidden;
+    margin-top: 40px;
+    max-width: 65%;
+}
+
+.topbar a{
+    transition: margin-top 1s;
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: Rubik;
+}
+
+.topbar img{
+    float: right;
+    max-width: 50px;
+    max-heigh: 50px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.topbar a:hover{
+    margin-top: -10px;
+}

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Panel - Guilds</title>
+        <link rel="stylesheet" href="list.css">
+        <link rel="icon" href="https://cdn.discordapp.com/avatars/788082772375896086/87bd693f09c78af08c8aa69c5c6b2ed8.webp">
+    </head>
+    <body>
+        <div class="topbar">
+            <%if(u.login){%>
+                <img src="https://cdn.discordapp.com/avatars/<%=u.user.id%>/<%=u.user.avatar%>.webp">
+                <a><%=u.user.username%></a>
+            <%}else{%>
+                <img src="./userpfp.png">
+                <a href="/login">Giriş</a>
+            <%}%>
+            <a href="/report">Bildir</a>
+            <a href="/panel">Panel</a>
+                <%if(u.login){%>
+                    <a href="/logout">Çıkış Yap</a>
+                <%}%>
+        </div>
+        <div class="grids">
+            <%for(var i in hasbot){%>
+                <div class="guild">
+                    <img src="<%=hasbot[i].icon%>">
+                    <span><%=hasbot[i].guild.name%></span>
+                    <a class="manage" href="./panel/<%=hasbot[i].guild.id%>">Yönet</a>
+                </div>
+            <%}%>
+
+                <%for(var i in nobot){%>
+                <div class="guild">
+                    <img src="<%=nobot[i].icon%>">
+                    <span><%=nobot[i].guild.name%></span>
+                    <a class="add" href="https://discord.com/oauth2/authorize?client_id=788082772375896086&scope=bot&permissions=311455468553" target="_blank">Ekle</a>
+                </div>
+            <%}%>
+        </div>
+    </body>
+</html>

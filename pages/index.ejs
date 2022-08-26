@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Sakız Bot</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="https://cdn.discordapp.com/avatars/788082772375896086/87bd693f09c78af08c8aa69c5c6b2ed8.webp">
+    </head>
+    <body>
+        <div class="topbar">
+            <%if(u.login){%>
+                <img src="https://cdn.discordapp.com/avatars/<%=u.user.id%>/<%=u.user.avatar%>.webp">
+                <a><%=u.user.username%></a>
+            <%}else{%>
+                <img src="./userpfp.png">
+                <a href="/login">Giriş</a>
+            <%}%>
+            <a href="/report">Bildir</a>
+            <a href="/panel">Panel</a>
+                <%if(u.login){%>
+                    <a href="/logout">Çıkış Yap</a>
+                <%}%>
+        </div>
+        <div class="sakizbot">
+            <div class="img">
+                <img src="https://cdn.discordapp.com/avatars/788082772375896086/87bd693f09c78af08c8aa69c5c6b2ed8.webp">
+            </div>
+            <div class="text">
+                <h1>Sakız Bot</h1>
+            </div>
+        </div>
+        <div class="line"></div>
+    </body>
+</html>

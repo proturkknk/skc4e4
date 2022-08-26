@@ -1,0 +1,43 @@
+body{
+    background-color: #333;
+}
+
+.topbar{
+    overflow: hidden;
+    margin-top: 40px;
+    max-width: 65%;
+}
+
+h1{
+    color: #f2f2f2;
+    font-size: 30px;
+    font-family: 'Rubik';
+}
+
+h2{
+    color: #f2f2f2;
+    font-family: 'Rubik';
+}
+
+.topbar a{
+    transition: margin-top 1s;
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: Rubik;
+}
+
+.topbar img{
+    float: right;
+    max-width: 50px;
+    max-heigh: 50px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.topbar a:hover{
+    margin-top: -10px;
+}
